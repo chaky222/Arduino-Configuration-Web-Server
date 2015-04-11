@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Configuration web server.</title>
+  <style type="text/css">
+       td, tr, a,p,span{
+        margin: 10px;
+        padding:10px; }
+  </style>
+</head>
+<body style = "margin:0; padding:0;">
+    <table width = 100%>
+        <tr><td colspan = "5" align = "left"><a style="font-size:20pt;" href = "http://www.google.com" >Configuration web server.</a> </td></tr>
+        <tr><td style = "background-color: #3366CC;" colspan = "5">&nbsp;</td></tr>
+        <tr>
+          <td  width = "25%" align = "center">
+            <table width = 100% border="1" >
+              <tr><th align = "center" width = 100%>About</th></tr>
+              <tr><td>From this page you can remotely manage the configuration of your arduino board.</td></tr>
+            </table>
+          </td>
+          <td align = "center" colspan = "4" width = "75%">
+            <form method="Get">
+              <table width = 100% border="1" >
+                <tr><th width = 1%>id</th><th align = "center" width = 1%>Parameter name</th><th width = 1%>Parameter value</th><th width = 100%>About this parameter</th></tr>              
+                <tr><td>1</td><td>AVAILABLE_IN_MS:</td><td>AVAILABLE_TIME_IN_MS</td></tr>
+                <tr><td>2</td><td>IPAddress:  </td><td><input type = "text" value = "IPAddress"    name = "IPAddress" /></td></tr>
+                <tr><td>3</td><td>MACAddress: </td><td><input type = "text" value = "MACAddress"   name = "MACAddress" /></td></tr>
+                <tr><td>4</td><td>MachineName:</td><td><input type = "text" value = "mashine_name" name = "mashine_name" /></td></tr>
+                <tr><td>5</td><td>Parameter1: </td><td><input type = "text" value = "Parameter1"   name = "Parameter1" /></td></tr>
+                <tr><td>6</td><td>Parameter2: </td><td><input type = "text" value = "Parameter2"   name = "Parameter2" /></td></tr>
+                <tr><td> </td><td>Save settings: </td><td><input type = "submit" value = "Save"/></td></tr>
+              </table>
+            </form>            
+          </td>
+        </tr>     
+    </table>
+</body>
+</html>
