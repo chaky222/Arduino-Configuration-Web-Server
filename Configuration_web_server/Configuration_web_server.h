@@ -9,7 +9,8 @@
 #include <arduino.h>
 #include <EEPROM.h>
 #include <SPI.h>
-#include <Ethernet.h>;
+
+#include <UIPEthernet.h>
 
 #include <avr/pgmspace.h>
 

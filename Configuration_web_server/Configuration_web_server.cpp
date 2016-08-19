@@ -3,8 +3,7 @@
 #define Configuration_web_server_cpp
 
 #include "Configuration_web_server.h"
-//#include <EEPROM.h>
-//#include <avr/pgmspace.h>
+
 
 #define p_string   1
 #define p_uint8_t  2
@@ -19,7 +18,7 @@
 //-------------------------------------PARAMETERS HERE!------------------------------
 //----------------------------parameter name-----------------------------default value---------------------------------------about this parameter------------------------------------parameter int_params[0]=max_length (in eeprom it will take this count of bytes)------int_params[1]=param_type. 1=String, 2=uint8_t,3=IPadres,4=mac array,5=bool.
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------third value - bool for is parameter for cofig_server or not. 1 = for_config_server
-const char par_0[] PROGMEM = "MachineName";  const char def_0[] PROGMEM = "arduino2560";                  const char about_0[] PROGMEM = "Name of your Arduino board in LAN.";                                            const char int_params_0[] PROGMEM = {35,p_string  ,1};
+const char par_0[] PROGMEM = "MachineName";  const char def_0[] PROGMEM = "arduino2560";                  const char about_0[] PROGMEM = "Name of your Arduino board in LAN. Max length=35chars";                         const char int_params_0[] PROGMEM = {35,p_string  ,1};
 const char par_1[] PROGMEM = "IPAddress";    const char def_1[] PROGMEM = {192,169,88,33,0};              const char about_1[] PROGMEM = "IPAddress of your Arduino board in LAN.";                                       const char int_params_1[] PROGMEM = {4, p_IP      ,1}; 
 const char par_2[] PROGMEM = "MACAddress";   const char def_2[] PROGMEM={0xDE,0xAD,0xBE,0xEF,0xFE,0xED,0};const char about_2[] PROGMEM = "MACAddress this server in LAN.";                                                const char int_params_2[] PROGMEM = {6, p_MACarray,1};
 const char par_3[] PROGMEM = "String demo";  const char def_3[] PROGMEM = "demo str";                     const char about_3[] PROGMEM = "This is demo string parameter for your Arduino board with LAN web server.";     const char int_params_3[] PROGMEM = {35,p_string  ,0};
